@@ -1,6 +1,7 @@
 %define		module	pyPdf
 
 Summary:	A Pure-Python library built as a PDF toolkit
+Summary(pl.UTF-8):	Biblioteka toolkitu PDF napisana w czystym Pythonie
 Name:		python-%{module}
 Version:	1.9
 Release:	1
@@ -9,7 +10,7 @@ Group:		Development/Languages/Python
 Source0:	http://pybrary.net/pyPdf/pyPdf-%{version}.tar.gz
 # Source0-md5:	2caddd42b685246621ecd19ce62f99ac
 URL:		http://pybrary.net/pyPdf/
-BuildRequires:	python-devel
+BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
 BuildArch:	noarch
@@ -23,6 +24,16 @@ A Pure-Python library built as a PDF toolkit. It is capable of:
 * cropping pages,
 * merging multiple pages into a single page,
 * encrypting and decrypting PDF files.
+
+%description -l pl.UTF-8
+pyPdf to napisana w czystym Pythonie biblioteka stworzona jako toolkit
+PDF. Potrafi:
+- wyciągać informacje z dokumentów (tytuł, autora...),
+- dzielić dokumenty na strony,
+- łączyć dokumenty z pojedynczych stron,
+- przycinać strony,
+- łączyć wiele stron w jedną,
+- szyfrować i odszyfrowywać pliki PDF.
 
 %prep
 %setup -q -n %{module}-%{version}
