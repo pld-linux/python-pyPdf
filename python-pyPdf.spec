@@ -3,12 +3,12 @@
 Summary:	A Pure-Python library built as a PDF toolkit
 Summary(pl.UTF-8):	Biblioteka toolkitu PDF napisana w czystym Pythonie
 Name:		python-%{module}
-Version:	1.9
+Version:	1.11
 Release:	1
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://pybrary.net/pyPdf/pyPdf-%{version}.tar.gz
-# Source0-md5:	2caddd42b685246621ecd19ce62f99ac
+# Source0-md5:	3aed4776bd086fe2d903d20f84252c6a
 URL:		http://pybrary.net/pyPdf/
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
