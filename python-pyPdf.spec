@@ -60,6 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGELOG
 %dir %{py_sitescriptdir}/%{module}
 %{py_sitescriptdir}/%{module}/*.py[co]
-%if "%{py_ver}" > "2.4"
-%{py_sitescriptdir}/reportlab-%{version}-py*.egg-info
-%endif
+%{py_sitescriptdir}/*.egg-info
