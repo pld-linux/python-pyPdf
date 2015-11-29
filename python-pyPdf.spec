@@ -10,6 +10,7 @@ Group:		Development/Languages/Python
 Source0:	http://pybrary.net/pyPdf/pyPdf-%{version}.tar.gz
 # Source0-md5:	7a75ef56f227b78ae62d6e38d4b6b1da
 URL:		http://pybrary.net/pyPdf/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python
